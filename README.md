@@ -2,9 +2,9 @@
 
 ## Folder structure:
 └── theme  
-    ├── assets     
-    ├── blocks     
-    |   ├── block-name.liquid    
+        ├── assets     
+        ├── blocks     
+        |    ├── block-name.liquid    
     ...
 
 ## Block schema
