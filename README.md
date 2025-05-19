@@ -27,6 +27,26 @@
 | 3 |settings|Default values for settings|
 | 4 |blocks|Default blocks included in the preset|
 
+## Accessing block settings: 
+-- [block object](https://shopify.dev/docs/api/liquid/objects/block#block-settings)
+
+## How to render:
+
+### All Theme blocks
+``` liquid
+/sections/section.liquid
+
+{% content_for 'blocks' %}
+
+{% schema %}
+{
+  "name": "Section",
+  "blocks": [{"type": "@theme"}]
+}
+{% endschema %}
+```
+
+### specific theme blocks:
 
 
 
