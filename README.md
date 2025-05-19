@@ -68,5 +68,25 @@
 {% endschema %}
 ```
 
+### static block:
+``` liquid
+{% content_for "block", type: "type", id: "id" %}
+```
+***with passing data***
+``` liquid
+{% content_for "block", id: "slide-1", type: "slide", color: "#111" %}
+```
+***Static theme blocks in presets***
+``` liquid
+{% content_for "block", type: "collapsible-row-summary", id: "collapsible-row" %}
+...
+"blocks": [
+        {
+          "type": "collapsible-row-summary",
+          "static": true,
+          "id": "collapsible-row"
+          ...
+        }
+
 # Resource:
 [block](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/quick-start?framework=liquid)
