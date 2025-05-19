@@ -79,7 +79,7 @@
 ***Static theme blocks in presets***
 ``` liquid
 {% content_for "block", type: "collapsible-row-summary", id: "collapsible-row" %}
-...
+
 "blocks": [
         {
           "type": "collapsible-row-summary",
