@@ -81,12 +81,13 @@
 {% content_for "block", type: "collapsible-row-summary", id: "collapsible-row" %}
 
 "blocks": [
-        {
-          "type": "collapsible-row-summary",
-          "static": true,
-          "id": "collapsible-row"
-          ...
-        }
+  {
+    "type": "collapsible-row-summary",
+    "static": true,
+    "id": "collapsible-row"
+    ...
+  }
+]
 ```
 
 # Resource:
