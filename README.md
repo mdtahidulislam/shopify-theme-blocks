@@ -33,9 +33,8 @@
 ## How to render:
 
 ### All Theme blocks
+#### /sections/section.liquid
 ``` liquid
-/sections/section.liquid
-
 {% content_for 'blocks' %}
 
 {% schema %}
