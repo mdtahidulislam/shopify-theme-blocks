@@ -32,8 +32,7 @@
 
 ## How to render:
 
-### All Theme blocks
-#### /sections/section.liquid
+### All Theme blocks: theme type
 ``` liquid
 {% content_for 'blocks' %}
 
@@ -45,19 +44,29 @@
 {% endschema %}
 ```
 
-### specific theme blocks:
+### Specific theme blocks: explicit type
+```
+{% content_for 'blocks' %}
 
+{% schema %}
+{
+  "name": "Slideshow",
+  "blocks": [{"type": "slide"}]
+}
+{% endschema %}
+```
 
+### Private blocks: underscore prefixed (/blocks/_slide.liquid)
+```
+{% content_for 'blocks' %}
 
-
-
-
-
-
-
-
-
-
+{% schema %}
+{
+  "name": "Slideshow",
+  "blocks": [{"type": "_slide"}]
+}
+{% endschema %}
+```
 
 # Resource:
 [block](https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/quick-start?framework=liquid)
