@@ -1,7 +1,7 @@
 # Theme Blocks
 
 ## Folder structure:
-<pre lang="markdown"> ``` └── theme ├── assets ├── blocks │   ├── block-name.liquid ... ``` </pre>
+``` └── theme ├── assets ├── blocks │   ├── block-name.liquid ... ```
 
 ## Block schema
 
