@@ -45,7 +45,7 @@
 ```
 
 ### Specific theme blocks: explicit type
-```
+``` liquid
 {% content_for 'blocks' %}
 
 {% schema %}
@@ -57,7 +57,7 @@
 ```
 
 ### Private blocks: underscore prefixed (/blocks/_slide.liquid)
-```
+``` liquid
 {% content_for 'blocks' %}
 
 {% schema %}
